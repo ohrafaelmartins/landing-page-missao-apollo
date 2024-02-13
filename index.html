@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Apollo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .fold {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            transition: margin-top 0.5s;
+        }
+
+        #fold1 {
+            background-color: black;
+            position: relative;
+            /* Necessário para o posicionamento da imagem */
+        }
+
+        #fold1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.nasa.gov/wp-content/uploads/2023/03/as11-44-6667.jpg');
+            background-size: cover;
+            /* background-position: 90% 50%; */
+            opacity: 0.5;
+            /* Opacidade para o efeito camuflado */
+        }
+
+
+        #fold2 {
+            background-color: #ffcc00;
+            /* Cor do botão */
+        }
+
+        #fold3 {
+            background-color: #333333;
+            /* Cor de fundo para a terceira dobra */
+        }
+
+        #fold3 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+            /* Texto justificado */
+
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ffcc00;
+            border: none;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffdb4d;
+        }
+
+        /* Transição entre dobras */
+        #fold1:focus-within~#fold2 {
+            margin-top: -100vh;
+        }
+
+        #fold2:focus-within~#fold3 {
+            margin-top: -100vh;
+        }
+
+        @media (max-width: 767px) {
+            #fold2 h1 {
+                margin-top: 0;
+            }
+
+            #fold2 p {
+                font-size: small;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fold1" class="fold">
+        <h1>Missão Apollo</h1>
+        <p>A missão Apollo foi um marco histórico na exploração espacial. Saiba mais sobre essa jornada incrível.</p>
+        <button>Comprar Ebook</button>
+        <!-- <img src="https://cdn.pixabay.com/photo/2019/07/05/15/04/moon-4318057_960_720.jpg" alt="Lua"> -->
+    </div>
+    <div id="fold2" class="fold">
+        <h1>Missão Apollo - Explorando o Espaço</h1>
+        <p>A missão Apollo foi um conjunto de voos espaciais tripulados realizados pela NASA, a agência espacial dos
+            Estados Unidos, com o objetivo de colocar o homem na lua. O programa foi desenvolvido durante a década de
+            1960 e culminou com a famosa missão Apollo 11, que realizou o primeiro pouso tripulado na lua em 20 de julho
+            de 1969.</p>
+        <p>O sucesso da missão Apollo foi um feito monumental na história da exploração espacial e marcou o início de
+            uma nova era na corrida espacial entre os Estados Unidos e a União Soviética. Além do pouso na lua, as
+            missões Apollo também contribuíram significativamente para o avanço da ciência e da tecnologia, fornecendo
+            importantes dados sobre o espaço e o nosso sistema solar.</p>
+        <p>Desde então, o legado da missão Apollo continua a inspirar gerações de cientistas, engenheiros e entusiastas
+            do espaço, servindo como um lembrete do poder da determinação humana e da capacidade de alcançar o
+            impossível.</p>
+        <p>Se você deseja aprender mais sobre a missão Apollo e a emocionante jornada do homem à lua, não deixe de
+            conferir nosso ebook exclusivo!</p>
+    </div>
+    <div id="fold3" class="fold">
+        <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/celestial-fireworks-260721.jpg" alt="NASA">
+    </div>
+</body>
+
+</html>
