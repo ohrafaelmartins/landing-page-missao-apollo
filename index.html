@@ -1,111 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/default.css">
+    <title>Document</title>
     <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/rocketman.css">
-    <title>Missão Apollo</title>
-    <style>
+    <link rel="stylesheet" href="src/nav.css">
+    <link rel="stylesheet" href="src/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Macondo&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="fold1" class="fold">
-        <div class="stars">
-            <!-- Generating stars dynamically -->
-            <script>
-                const starsContainer = document.querySelector('.stars');
-                const numberOfStars = 130;
 
-                for (let i = 0; i < numberOfStars; i++) {
-                    const star = document.createElement('div');
-                    star.classList.add('star');
-                    star.style.left = Math.random() * 100 + '%';
-                    star.style.top = Math.random() * 100 + '%';
-                    starsContainer.appendChild(star);
-                }
-            </script>
-        </div>
-
-        <h1>Missão Apollo</h1>
-        <p>A missão Apollo foi um marco histórico na exploração espacial. Saiba mais sobre essa jornada incrível.</p>
-        <button>Comprar Ebook</button>
-
-        <div class="rocketman">
-            <div class="moon moon-animation"></div>
-
-            <div class="animation">
-                <div class="backpack"></div>
-                <div class="astronaut">
-
-                    <div class="helmet">
-                        <div class="glass">
-                            <div class="shine"></div>
-                        </div>
-                    </div>
-                    <div class="dress">
-                        <div class="c">
-                            <div class="btn1"></div>
-                            <div class="btn2"></div>
-                            <div class="btn3"></div>
-                        </div>
-                    </div>
-                    <div class="hand handl">
-                        <div class="hand handl1">
-                            <div class="glovel">
-                                <div class="thumbl"></div>
-                                <div class="b2"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hand handr">
-                        <div class="hand handr1">
-                            <div class="glover">
-                                <div class="thumbr"></div>
-                                <div class="b1"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="legl leg">
-                        <div class="bootl">
-                            <div class="bootl2"></div>
-                        </div>
-                    </div>
-                    <div class="legr leg">
-                        <div class="bootl">
-                            <div class="bootl2"></div>
-                        </div>
-                    </div>
-                    <div class="pipe pipe1">
-                        <div class="pipe pipe2">
-                            <div class="pipe pipe3"></div>
-                        </div>
-                    </div>
-                </div>
+    <header class="mobile-header">
+        <div class="container">
+            <div class="logo">VitalityCare</div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
 
+
+
+
+    <div class="box box1" id="box1">
+
+        <h1>Ajude Seu <span class="highlighted">Corpo</span> a Alcançar Seu <span class="highlighted">
+                Potencial</span>
+        </h1>
+
+        <p>Na Clínica de Saúde Vitalidade, oferecemos uma abordagem integrada para cuidar do seu corpo e da sua
+            mente.
+            Combinando fisioterapia de ponta e orientação nutricional especializada, nossa equipe dedicada está aqui
+            para ajudar você a atingir seus objetivos de saúde e bem-estar. Descubra como podemos ajudá-lo a viver
+            sua
+            vida ao máximo
+        </p>
+
+
+        <div class="rectangle">
+            <input type="email" name="email" id="" placeholder="digite seu melhor e-mail">
+            <input type="button" value="QUERO MEU E-BOOK GRÁTIS!">
+
+            <br>
+
+            <span>E-book gratis com as melhores</span>
+            <br>
+            <span>dicas de nutrucao de 2024</span>
+        </div>
     </div>
-    <div id="fold2" class="fold">
-        <h1>Missão Apollo - Explorando o Espaço</h1>
-        <p>A missão Apollo foi um conjunto de voos espaciais tripulados realizados pela NASA, a agência espacial dos
-            Estados Unidos, com o objetivo de colocar o homem na lua. O programa foi desenvolvido durante a década de
-            1960 e culminou com a famosa missão Apollo 11, que realizou o primeiro pouso tripulado na lua em 20 de julho
-            de 1969.</p>
-        <p>O sucesso da missão Apollo foi um feito monumental na história da exploração espacial e marcou o início de
-            uma nova era na corrida espacial entre os Estados Unidos e a União Soviética. Além do pouso na lua, as
-            missões Apollo também contribuíram significativamente para o avanço da ciência e da tecnologia, fornecendo
-            importantes dados sobre o espaço e o nosso sistema solar.</p>
-        <p>Desde então, o legado da missão Apollo continua a inspirar gerações de cientistas, engenheiros e entusiastas
-            do espaço, servindo como um lembrete do poder da determinação humana e da capacidade de alcançar o
-            impossível.</p>
-        <p>Se você deseja aprender mais sobre a missão Apollo e a emocionante jornada do homem à lua, não deixe de
-            conferir nosso ebook exclusivo!</p>
+
+    <div class="box box2">
+
+        <h2>Reconstrua Sua Saúde de Dentro para Fora</h2>
+
+        <p>
+            Nossa equipe de fisioterapeutas e nutricionistas está comprometida em ajudá-lo a reconstruir sua saúde de
+            dentro para fora. Com técnicas avançadas de fisioterapia e orientação nutricional personalizada, estamos
+            aqui para ajudá-lo a superar lesões, recuperar a mobilidade e alcançar um estilo de vida mais saudável.
+            Deixe-nos ajudá-lo a construir um futuro mais forte e mais saudável juntos
+        </p>
+
+
+        <!-- <div class="icon-container">
+            <i class="fa fa-star icon"></i>
+            <span>lorem lorem</span>
+            <i class="fa fa-heart icon"></i>
+            <span>lorem lorem</span>
+            <i class="fa fa-bell icon"></i>
+            <span>lorem lorem</span>
+            <i class="fa fa-envelope icon"></i>
+            <span>lorem lorem</span>
+        </div> -->
     </div>
+    <div class="box box3">
+        <h3>Transforme Sua Vida com a Clínica de Saúde Vitalidade</h3>
+        <p>Na Clínica de Saúde Vitalidade, não apenas tratamos sintomas - ajudamos a transformar vidas. Com uma
+            abordagem holística para a saúde e o bem-estar, estamos comprometidos em ajudá-lo a alcançar resultados
+            duradouros. Deixe-nos ser seu parceiro na jornada para uma vida mais saudável e vibrante. Agende sua
+            consulta hoje e dê o primeiro passo para uma transformação total.</p>
+    </div>
+
+    <footer>
+        <!-- <div class="container"> -->
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/seu-numero" class="icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <!-- </div> -->
+    </footer>
+
+
+
 </body>
+
+<script>
+    function toggleMenu() {
+        var nav = document.querySelector('.mobile-nav');
+        nav.classList.toggle('open');
+    }
+</script>
 
 </html>
